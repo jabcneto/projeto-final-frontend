@@ -1,0 +1,11 @@
+{
+  "name": "projeto-final-frontend-editora-castor",
+  "version": "1.0.0",
+  "description": "Projeto final da disciplina frontend essencial da residencia de software 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jabcneto",
+  "license": "ISC"
+}
