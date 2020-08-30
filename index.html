@@ -6,6 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -34,16 +36,22 @@
           <div id="nav-principal" class="collapse navbar-collapse mt-3">
             <ul class="navbar-nav ml-auto flex-row">
               <li class="nav-item align-self-center">
-                <a href="./pages/home.html" class="nav-link ml-2 text-light">Home</a>
+                <a href="./pages/home.html" class="nav-link ml-2 text-light"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link ml-2 text-light">Produtos</a>
               </li>
               <li class="nav-item">
-                <a href="./pages/sobre.html" class="nav-link ml-2 text-light">Sobre</a>
+                <a href="./pages/sobre.html" class="nav-link ml-2 text-light"
+                  >Sobre</a
+                >
               </li>
               <li class="nav-item">
-                <a href="./pages/contato.html" class="nav-link ml-2 text-light">Contatos</a>
+                <a href="./pages/contato.html" class="nav-link ml-2 text-light"
+                  >Contatos</a
+                >
               </li>
               <li class="nav-item ml-5">
                 <a href="" class="btn btn-outline-light">Entrar</a>
@@ -62,8 +70,8 @@
               <div class="align-self-center">
                 <div class="display-4">Lorem, ipsum dolor.</div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                  nobis quam inventore provident, facilis eaque.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur nobis quam inventore provident, facilis eaque.
                 </p>
               </div>
             </div>
@@ -73,15 +81,14 @@
           </div>
         </div>
       </section>
-      
-    
+
       <section class="text-dark">
         <div class="container">
           <div class="row">
             <div class="col-md-6 align-self-right">
               <img class="" src="./img/library.png" width="350" alt="" />
             </div>
-    
+
             <div class="col-md-6 align-self-center">
               <div class="display-4">Lorem, ipsum dolor.</div>
               <p>
@@ -92,7 +99,7 @@
           </div>
         </div>
       </section>
-    
+
       <section class="bg-dark text-light">
         <div class="container">
           <div class="row">
@@ -128,7 +135,7 @@
         </div>
       </section>
     </section>
-    
+
     <footer class="bg-dark text-light">
       <div class="container p-4 border-top">
         <div class="row">
@@ -146,7 +153,9 @@
             <div class="h6">
               <a class="h4 text-light" href="">Sobre nos</a>
             </div>
-            <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <a href="./pages/sobre.html">Leia mais</a>
           </div>
           <div class="col-sm-3 col-md-4 text-center align-items-center">
@@ -155,16 +164,26 @@
               <div id="nav-footer d-flex">
                 <ul class="navbar-nav flex-row ml-4 align-self-center">
                   <li class="nav-item">
-                    <a href="./pages/home.html" class="nav-link text-light">Home</a>
+                    <a href="./pages/home.html" class="nav-link text-light"
+                      >Home</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a href="" class="nav-link ml-3 text-light">Produtos</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/sobre.html" class="nav-link ml-3 text-light">Sobre</a>
+                    <a
+                      href="./pages/sobre.html"
+                      class="nav-link ml-3 text-light"
+                      >Sobre</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a href="./pages/contato.html" class="nav-link ml-3 text-light">Contatos</a>
+                    <a
+                      href="./pages/contato.html"
+                      class="nav-link ml-3 text-light"
+                      >Contatos</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -173,18 +192,18 @@
         </div>
       </div>
     </footer>
-    
+
     <script>
-      document.querySelectorAll('a').forEach(link=>{
-        const conteudo = document.getElementById('conteudo');
-        link.onclick = function(e) {
-          conteudo.innerHTML = '';
-          e.preventDefault()
+      document.querySelectorAll("a").forEach((link) => {
+        const conteudo = document.getElementById("conteudo");
+        link.onclick = function (e) {
+          conteudo.innerHTML = "";
+          e.preventDefault();
           fetch(link.href)
-            .then(resp => resp.text())
-            .then(html => conteudo.innerHTML=html)
-        }
-      })
+            .then((resp) => resp.text())
+            .then((html) => (conteudo.innerHTML = html));
+        };
+      });
     </script>
 
     <script
