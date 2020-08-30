@@ -18,11 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://use.fontawesome.com/727e4db0ac.js"></script>
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Editora Castor</title>
   </head>
-  <body>
+  <body class="bg-light">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="border-bottom container">
@@ -37,27 +37,31 @@
           >
             <i class="navbar-toggler-icon"></i>
           </button>
-          <div id="nav-principal" class="collapse navbar-collapse mt-3">
-            <ul class="navbar-nav ml-auto flex-row">
+          <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
+            <ul
+              class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
+            >
               <li class="nav-item align-self-center">
-                <a href="./pages/home.html" class="nav-link ml-2 text-light"
+                <a href="./pages/home.html" class="nav-link mr-2 text-light"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link ml-2 text-light">Produtos</a>
+                <a href="./pages/produtos.html" class="nav-link mr-2 text-light"
+                  >Produtos</a
+                >
               </li>
               <li class="nav-item">
-                <a href="./pages/sobre.html" class="nav-link ml-2 text-light"
+                <a href="./pages/sobre.html" class="nav-link mr-2 text-light"
                   >Sobre</a
                 >
               </li>
               <li class="nav-item">
-                <a href="./pages/contato.html" class="nav-link ml-2 text-light"
-                  >Contatos</a
+                <a href="./pages/contato.html" class="nav-link mr-2 text-light"
+                  >Contato</a
                 >
               </li>
-              <li class="nav-item ml-5">
+              <li class="nav-item ml-3">
                 <a href="" class="btn btn-outline-light">Entrar</a>
               </li>
             </ul>
@@ -111,10 +115,11 @@
               class="pt-3 col-sm-6 align-self-center text-center mx-auto d-block"
             >
               <address>
-                <strong class="h2">Serratec.</strong><br />
+                <h3>Serratec</h3>
+                R. Afrânio Melo Franco,<br />
                 333 - 313 - Quitandinha,<br />
                 Petrópolis - RJ, 25651-000<br />
-                Telefone: (21) 9456-7890.
+                (24) 2243-7200
               </address>
             </div>
             <div class="col-md-6">
@@ -136,14 +141,16 @@
               </div>
             </div>
           </div>
+          <!-- ./row -->
         </div>
+        <!-- ./container -->
       </section>
     </section>
 
     <footer class="bg-dark text-light">
       <div class="container p-4 border-top">
         <div class="row">
-          <div class="col-md-4 align-items-center">
+          <div class="col-md-4">
             <img
               class="mx-auto d-none d-md-block"
               width="100"
@@ -152,7 +159,8 @@
             />
           </div>
           <div
-            class="col-md-4 col-sm-4 text-center align-items-center text-light"
+            id="sobre-inferior"
+            class="col-md-4 text-center text-light d-none d-md-block"
           >
             <h4>Sobre</h4>
             <p class="text-truncate lead">
@@ -160,18 +168,24 @@
             </p>
             <a href="./pages/sobre.html" class="text-light">Leia mais</a>
           </div>
-          <div class="col-sm-3 col-md-4 text-center align-items-center">
+          <div class="col-12 col-md-4 text-center">
             <h4 class="h4 text-light">Navegação</h4>
-            <nav class="navbar navbar-dark bg-dark">
-              <div id="nav-footer d-flex">
-                <ul class="navbar-nav flex-row ml-4 align-self-center">
+            <nav
+              class="navbar navbar-dark bg-dark d-flex justify-content-center"
+            >
+              <div id="nav-footer">
+                <ul class="navbar-nav flex-row">
                   <li class="nav-item">
                     <a href="./pages/home.html" class="nav-link text-light"
                       >Home</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="" class="nav-link ml-3 text-light">Produtos</a>
+                    <a
+                      href="./pages/produtos.html"
+                      class="nav-link ml-3 text-light"
+                      >Produtos</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a
@@ -191,8 +205,11 @@
               </div>
             </nav>
           </div>
+          <!-- ./col-12 col-md-4 text-center -->
         </div>
+        <!-- ./row -->
       </div>
+      <!-- ./container p-4 border-top -->
     </footer>
 
     <script>
@@ -207,20 +224,16 @@
         };
       });
     </script>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
   </body>
