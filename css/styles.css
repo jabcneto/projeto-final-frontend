@@ -1,9 +1,38 @@
 /* Trocando a font */
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Inicio WhatsApp */
+
+/* .whatsapp-link { 
+  position: fixed;
+  width: 60px;
+  heigth: 60px;
+  bottom: 40px;
+  rigth: 70px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center: font-size: 30px;
+  box-shadown: 1px 1px 2px #888;
+  zindex: 1000;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}
+
+/*Fim WhatsApp  */
+
+footer{
+  position: fixed bottom;
+
+}
+
 /* Ajustando responsividade */
+
 @media (max-width: 575.98px) {
   footer {
     border-bottom: 1px solid white;
@@ -16,14 +45,8 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
-@media (min-width: 1200px) {
-  
-}
+@media (min-width: 1200px) {}
