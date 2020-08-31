@@ -18,11 +18,3 @@ function navegacao(url, seletor) {
       elemento.innerHTML = html;
     });
 }
-
-function login(e) {
-	e.preventDefault();
-	let nome = "fulano";
-	document.getElementById("nomeLogado").innerHTML = `Bem vindo, ` + nome;
-}
-
-document.getElementById('form-login').addEventListener("submit", login, true);
