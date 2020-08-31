@@ -1,7 +1,6 @@
 document.querySelectorAll("[urlAjax]").forEach((link) => {
   const urlAjax = link.attributes["urlAjax"].value;
   const destino = link.attributes["destino"].value;
-  console.log("klaisdnasdkjn");
   link.onclick = (e) => {
     e.preventDefault();
 
@@ -20,6 +19,10 @@ function navegacao(url, seletor) {
     });
 }
 
-function login() {
-  document.getElementById("nomeLogado").innerHTML = "Bem vindo fulano";
+function login(e) {
+	e.preventDefault();
+	let nome = "fulano";
+	document.getElementById("nomeLogado").innerHTML = `Bem vindo, ` + nome;
 }
+
+document.getElementById('form-login').addEventListener("submit", login, true);

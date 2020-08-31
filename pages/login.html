@@ -4,8 +4,8 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h5 class="card-title text-center">Login</h5>
-          <form class="form-signin">
-            <div class="form-label-group">
+          <form id='form-login' class="form-signin">
+            <div id="email" class="form-label-group">
               <input
                 type="email"
                 id="inputEmail"
@@ -16,7 +16,7 @@
               />
             </div>
             <br/>
-            <div class="form-label-group">
+            <div id="senha" class="form-label-group">
               <input
                 type="password"
                 id="inputPassword"
@@ -39,7 +39,7 @@
             <button
               class="btn btn-lg btn-dark btn-block text-uppercase"
               type="submit"
-              onclick="login()"
+              onsubmit="login(e)"
             >
               Entrar
             </button>
