@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .produto-img:hover {
+    transform: scale(1.2);
+  }
+}
+
+.produto-img {
+  background-color: #f7f7f7;
+  height: 200px;
+  padding: 0 20%;
+  border-bottom: 1px solid #c0c0c0;
+  transition: transform 0.4s;
+}

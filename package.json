@@ -10,6 +10,7 @@
   "author": "jabcneto",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "express": "^4.17.1"
   }
 }

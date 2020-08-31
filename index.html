@@ -18,8 +18,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
+    <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/produto.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+
     <title>Editora Castor</title>
   </head>
 
@@ -71,6 +80,7 @@
           </div>
         </div>
       </nav>
+      <span id="usuario-logado"></span>
     </header>
 
     <section id="conteudo">
@@ -134,11 +144,7 @@
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.939162733897!2d-43.20893610585945!3d-22.5324353529319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafd20246b768238a!2sParque%20Tecnol%C3%B3gico%20Regi%C3%A3o%20Serrana!5e0!3m2!1sen!2sbr!4v1598713143193!5m2!1sen!2sbr"
                   height="100%"
                   width="100%"
-                  frameborder="1"
                   style="border: 0"
-                  allowfullscreen=""
-                  aria-hidden="false"
-                  tabindex="0"
                 ></iframe>
               </div>
             </div>
@@ -222,18 +228,7 @@
       <!-- ./container p-4 border-top -->
     </footer>
 
-    <script>
-      document.querySelectorAll("a").forEach((link) => {
-        const conteudo = document.getElementById("conteudo");
-        link.onclick = function (e) {
-          conteudo.innerHTML = "";
-          e.preventDefault();
-          fetch(link.href)
-            .then((resp) => resp.text())
-            .then((html) => (conteudo.innerHTML = html));
-        };
-      });
-    </script>
+    <script src="./js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       crossorigin="anonymous"
