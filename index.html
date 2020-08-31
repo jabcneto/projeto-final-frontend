@@ -24,7 +24,6 @@
     />
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
-    <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/produto.css" />
     <link rel="stylesheet" href="./css/login.css" />
@@ -34,9 +33,10 @@
 
   <body class="bg-light">
     <header>
+      <h2 id="nomeLogado"></h2>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="border-bottom container">
-          <a href="./pages/home.html" class="navbar-brand">
+          <a href urlAjax='./pages/home.html' destino='#conteudo' class="navbar-brand">
             <img src="./img/logo.png" alt="" width="100px" />
           </a>
           <button
@@ -52,27 +52,47 @@
               class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
             >
               <li class="nav-item align-self-center">
-                <a href="./pages/home.html" class="nav-link mr-2 text-light"
+                <a
+                  href
+                  urlAjax="./pages/home.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a href="./pages/produtos.html" class="nav-link mr-2 text-light"
+                <a
+                  href
+                  urlAjax="./pages/produtos.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
                   >Produtos</a
                 >
               </li>
               <li class="nav-item">
-                <a href="./pages/sobre.html" class="nav-link mr-2 text-light"
+                <a
+                  href
+                  urlAjax="./pages/sobre.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
                   >Sobre</a
                 >
               </li>
               <li class="nav-item">
-                <a href="./pages/contato.html" class="nav-link mr-2 text-light"
+                <a
+                  href
+                  urlAjax="./pages/contato.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
                   >Contato</a
                 >
               </li>
               <li class="nav-item ml-3">
-                <a href="./pages/login.html" class="btn btn-outline-light"
+                <a
+                  href
+                  urlAjax="./pages/login.html"
+                  destino="#conteudo"
+                  class="btn btn-outline-light"
                   >Entrar</a
                 >
               </li>
@@ -191,32 +211,45 @@
             >
               <div id="nav-footer">
                 <ul class="navbar-nav flex-row">
-                  <li class="nav-item">
-                    <a href="./pages/home.html" class="nav-link text-light"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="./pages/produtos.html"
-                      class="nav-link ml-3 text-light"
-                      >Produtos</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="./pages/sobre.html"
-                      class="nav-link ml-3 text-light"
-                      >Sobre</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="./pages/contato.html"
-                      class="nav-link ml-3 text-light"
-                      >Contato</a
-                    >
-                  </li>
+                  <ul
+              class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
+            >
+              <li class="nav-item align-self-center">
+                <a
+                  href
+                  urlAjax="./pages/home.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href
+                  urlAjax="./pages/produtos.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
+                  >Produtos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href
+                  urlAjax="./pages/sobre.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href
+                  urlAjax="./pages/contato.html"
+                  destino="#conteudo"
+                  class="nav-link mr-2 text-light"
+                  >Contato</a
+                >
+              </li>
                 </ul>
               </div>
             </nav>
