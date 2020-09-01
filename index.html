@@ -46,13 +46,13 @@
   <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/social.css" />
 
   <title>Editora Castor</title>
 </head>
 
 <body class="bg-light">
   <header>
-    <h2 id="nomeLogado"></h2>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="border-bottom container">
         <a href='index.html' class="navbar-brand">
@@ -99,7 +99,9 @@
             </div>
           </div>
           <div class="d-none d-md-block col-md-6">
-            <img src="./img/body-castor.png" width="350" alt="" />
+            <figure>
+              <img src="./img/body-castor.png" width="350" alt="Castor fazendo joinha" />
+              <figure>
           </div>
         </div>
       </div>
@@ -117,8 +119,7 @@
             <p class="lead">
               Venha conferir nossa seleção de volta às aulas!
             </p>
-            <a href ="./pages/sobre.html"
-            destino="#conteudo" class="text-light">Leia mais</a>
+            <a href="./pages/sobre.html" destino="#conteudo" class="text-light">Leia mais</a>
           </div>
         </div>
       </div>
@@ -152,9 +153,6 @@
   </section>
 
   <!-- Inicio Footer -->
-    <!-- Inicio Whatsapp -->
-    <!-- <a href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"></a> -->
-    <!-- Fim WhatsApp -->
   <footer class="bg-dark text-light">
     <div class="container p-4 border-top">
       <div class="row">
@@ -173,8 +171,7 @@
             darmos a eles a chance de ficarem no holofote que merecem no mundo
             da literatura.
           </p>
-          <a href ="./pages/sobre.html"
-          destino="#conteudo" class="text-light">Leia mais</a>
+          <a href="./pages/sobre.html" destino="#conteudo" class="text-light">Leia mais</a>
         </div>
         <div class="col-12 col-md-4 text-center">
           <h4 class="h4 text-light">Navegação</h4>
@@ -183,26 +180,48 @@
               <ul class="navbar-nav flex-row">
                 <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
                   <li class="nav-item align-self-center">
-                    <a href ="./pages/index.html" destino="#conteudo" class="nav-link mr-2 text-light">Home</a>
+                    <a href="./pages/index.html" destino="#conteudo" class="nav-link mr-2 text-light">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a href ="./pages/produtos.html" destino="#conteudo"
-                      class="nav-link mr-2 text-light">Produtos</a>
+                    <a href="./pages/produtos.html" destino="#conteudo" class="nav-link mr-2 text-light">Produtos</a>
                   </li>
                   <li class="nav-item">
-                    <a href ="./pages/sobre.html" destino="#conteudo" class="nav-link mr-2 text-light">Sobre</a>
+                    <a href="./pages/sobre.html" destino="#conteudo" class="nav-link mr-2 text-light">Sobre</a>
                   </li>
                   <li class="nav-item">
-                    <a href ="./pages/contato.html" destino="#conteudo"
-                      class="nav-link mr-2 text-light">Contato</a>
+                    <a href="./pages/contato.html" destino="#conteudo" class="nav-link mr-2 text-light">Contato</a>
                   </li>
                 </ul>
+              </ul>
             </div>
           </nav>
         </div>
         <!-- ./col-12 col-md-4 text-center -->
       </div>
       <!-- ./row -->
+      <div class="row">
+        <!-- Inicio Whatsapp -->
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+        <!-- Fim WhatsApp -->
+        <!-- redes sociais -->
+        <div class="col-12 container d-flex justify-content-center">
+          <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"><i
+              class="fab fa-lg fa-facebook-f"></i></a>
+          <a class="tw-ic mr-3" href="https://www.twitter.com/" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+          <a class="li-ic mr-3" href="https://www.linkedin.com/" role="button"><i
+              class="fab fa-lg fa-linkedin-in"></i></a>
+          <a class="ins-ic mr-3" href="https://www.instagram.com/" role="button"><i
+              class="fab fa-lg fa-instagram"></i></a>
+          <a class="so-ic mr-3" href="http://www.stackoverflow.com/" role="button"><i
+              class="fab fa-lg fa-stack-overflow"></i></a>
+          <a class="git-ic mr-3" href="https://www.github.com/" role="button"><i class="fab fa-lg fa-github"></i></a>
+        </div>
+        <!-- Fim das redes sociais -->
+        <span class="footer-text m-0 container d-flex justify-content-center" id="copyright"> Copyright © 2020 | Todos
+          os direitos reservados a Editora Castor
+          Desenvolvido por Grupo1.</span>
+      </div>
     </div>
     <!-- ./container p-4 border-top -->
   </footer>

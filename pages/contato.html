@@ -1,156 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Inicico Fivicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <!-- Fim Fivicon -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "579022496342419");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=579022496342419&ev=PageView
+	&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <!-- Inicico Fivicon -->
-  <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
-  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
-  <!-- Fim Fivicon -->
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '579022496342419');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=579022496342419&ev=PageView
-	&noscript=1" />
-  </noscript>
-  <!-- End Facebook Pixel Code -->
+    <!-- Google Tag -->
+    <!-- Global site tag (gtag.js) - Google Ads: 683045661 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-683045661"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-683045661");
+    </script>
+    <!-- End Google Tag -->
 
-  <!-- Google Tag -->
-  <!-- Global site tag (gtag.js) - Google Ads: 683045661 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-683045661">
-  </script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-683045661'); </script>
-  <!-- End Google Tag -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
-  <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/social.css" />
 
-  <link rel="stylesheet" href="../css/styles.css" />
+    <title>Editora Castor</title>
+  </head>
 
-  <title>Editora Castor</title>
-</head>
-
-<body class="bg-light">
-  <header>
-    <h2 id="nomeLogado"></h2>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="border-bottom container">
-        <a href='../index.html' class="navbar-brand">
-          <img src="../img/logo.png" alt="" width="100px" />
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" aria-controls="navbarNav">
-          <i class="navbar-toggler-icon"></i>
-        </button>
-        <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
-          <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
-            <li class="nav-item align-self-center">
-              <a href='../index.html' class="nav-link mr-2 text-light">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href='./produtos.html' class="nav-link mr-2 text-light">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a href='./sobre.html' class="nav-link mr-2 text-light">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a href='./contato.html' class="nav-link mr-2 text-light">Contato</a>
-            </li>
-            <li class="nav-item ml-3">
-              <a href='./login.html' class="btn btn-outline-light">Entrar</a>
-            </li>
-          </ul>
+  <body class="bg-light">
+    <header>
+      <h2 id="nomeLogado"></h2>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="border-bottom container">
+          <a href="../index.html" class="navbar-brand">
+            <img src="../img/logo.png" alt="" width="100px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#nav-principal"
+            aria-controls="navbarNav"
+          >
+            <i class="navbar-toggler-icon"></i>
+          </button>
+          <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
+            <ul
+              class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
+            >
+              <li class="nav-item align-self-center">
+                <a href="../index.html" class="nav-link mr-2 text-light"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./produtos.html" class="nav-link mr-2 text-light"
+                  >Produtos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./sobre.html" class="nav-link mr-2 text-light"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./contato.html" class="nav-link mr-2 text-light"
+                  >Contato</a
+                >
+              </li>
+              <li class="nav-item ml-3">
+                <a href="./login.html" class="btn btn-outline-light">Entrar</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <span id="usuario-logado"></span>
+    </header>
+
+    <!-- Inicio email -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 p-3 m-auto">
+          <form class="m-5" action="">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                placeholder="seuemail@email.com"
+                required
+              />
+            </div>
+            <!-- Fim do email -->
+            <!-- Inicio nome -->
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                placeholder="Seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label aria-placeholder="" for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefone"
+                placeholder="(55) 99999-9999"
+                required
+              />
+            </div>
+            <!-- Fim do nome -->
+            <!-- Inicio mensagem -->
+            <div class="form-group">
+              <p>Mensagem:</p>
+              <textarea
+                class="w-100 p-2 rounded form-control"
+                name="message"
+                rows="10"
+                cols="10"
+                placeholder="Escreva sua mensagem aqui."
+                required
+              ></textarea>
+            </div>
+            <!-- Fim mensagem -->
+            <!-- Inicio botão enviar -->
+            <button type="submit" class="d-block m-auto btn btn-dark">
+              Enviar
+            </button>
+          </form>
+        </div>
+        <!-- Fim do botão enviar -->
+        <!-- ./col-xs-12 col-md-6 p-3 m-auto -->
       </div>
-    </nav>
-    <span id="usuario-logado"></span>
-  </header>
-
-<!-- Inicio email -->
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-6 p-3 m-auto">
-      <form class=" m-5" action="">
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            placeholder="seuemail@email.com"
-            required
-          />
-        </div>
-        <!-- Fim do email -->
-        <!-- Inicio nome -->
-        <div class="form-group">
-          <label for="nome">Nome:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="nome"
-            placeholder="Seu nome"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label aria-placeholder="" for="telefone">Telefone:</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="telefone"
-            placeholder="(55) 99999-9999"
-            required
-          />
-        </div>
-        <!-- Fim do nome -->
-        <!-- Inicio mensagem -->
-        <div class="form-group">
-          <p>Mensagem:</p>
-          <textarea
-            class="w-100 p-2 rounded form-control"
-            name="message"
-            rows="10"
-            cols="10"
-            placeholder="Escreva sua mensagem aqui."
-            required
-          ></textarea>
-        </div>
-        <!-- Fim mensagem -->
-        <!-- Inicio botão enviar -->
-        <button type="submit" class="d-block m-auto btn btn-dark">
-          Enviar
-        </button>
-      </form>
+      <!-- /.row -->
     </div>
-    <!-- Fim do botão enviar -->
-    <!-- ./col-xs-12 col-md-6 p-3 m-auto -->
-  </div>
-  <!-- /.row -->
-</div>
-<!-- /.container -->
+    <!-- /.container -->
 
-  <!-- Inicio Footer -->
+    <!-- Inicio Footer -->
     <!-- Inicio Whatsapp -->
     <!-- <a href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"></a> -->
     <!-- Fim WhatsApp -->
@@ -158,9 +209,17 @@
       <div class="container p-4 border-top">
         <div class="row">
           <div class="col-md-4">
-            <img class="mx-auto d-none d-md-block" width="100" src="../img/logo.png" alt="Logo da editora castor" />
+            <img
+              class="mx-auto d-none d-md-block"
+              width="100"
+              src="./img/logo.png"
+              alt="Logo da editora castor"
+            />
           </div>
-          <div id="sobre-inferior" class="col-md-4 text-center text-light d-none d-md-block">
+          <div
+            id="sobre-inferior"
+            class="col-md-4 text-center text-light d-none d-md-block"
+          >
             <h4>Sobre</h4>
             <p class="text-truncate lead">
               Somos um grupo de amantes de livros ambiciosos, e decidimos criar
@@ -172,44 +231,121 @@
               darmos a eles a chance de ficarem no holofote que merecem no mundo
               da literatura.
             </p>
-            <a href ="./sobre.html"
-            destino="#conteudo" class="text-light">Leia mais</a>
+            <a href="./pages/sobre.html" destino="#conteudo" class="text-light"
+              >Leia mais</a
+            >
           </div>
           <div class="col-12 col-md-4 text-center">
             <h4 class="h4 text-light">Navegação</h4>
-            <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+            <nav
+              class="navbar navbar-dark bg-dark d-flex justify-content-center"
+            >
               <div id="nav-footer">
                 <ul class="navbar-nav flex-row">
-                  <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
+                  <ul
+                    class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
+                  >
                     <li class="nav-item align-self-center">
-                      <a href ="../index.html" destino="#conteudo" class="nav-link mr-2 text-light">Home</a>
+                      <a
+                        href="./pages/index.html"
+                        destino="#conteudo"
+                        class="nav-link mr-2 text-light"
+                        >Home</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a href ="./produtos.html" destino="#conteudo"
-                        class="nav-link mr-2 text-light">Produtos</a>
+                      <a
+                        href="./pages/produtos.html"
+                        destino="#conteudo"
+                        class="nav-link mr-2 text-light"
+                        >Produtos</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a href ="./sobre.html" destino="#conteudo" class="nav-link mr-2 text-light">Sobre</a>
+                      <a
+                        href="./pages/sobre.html"
+                        destino="#conteudo"
+                        class="nav-link mr-2 text-light"
+                        >Sobre</a
+                      >
                     </li>
                     <li class="nav-item">
-                      <a href ="./contato.html" destino="#conteudo"
-                        class="nav-link mr-2 text-light">Contato</a>
+                      <a
+                        href="./pages/contato.html"
+                        destino="#conteudo"
+                        class="nav-link mr-2 text-light"
+                        >Contato</a
+                      >
                     </li>
                   </ul>
+                </ul>
               </div>
             </nav>
           </div>
           <!-- ./col-12 col-md-4 text-center -->
         </div>
         <!-- ./row -->
+        <div class="row">
+          <!-- Inicio Whatsapp -->
+          <a
+            class="whatsapp-link"
+            href="https://web.whatsapp.com/send?phone=5521988990633"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <!-- Fim WhatsApp -->
+          <!-- redes sociais -->
+          <div class="col-12 container d-flex justify-content-center">
+            <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"
+              ><i class="fab fa-lg fa-facebook-f"></i
+            ></a>
+            <a class="tw-ic mr-3" href="https://www.twitter.com/" role="button"
+              ><i class="fab fa-lg fa-twitter"></i
+            ></a>
+            <a class="li-ic mr-3" href="https://www.linkedin.com/" role="button"
+              ><i class="fab fa-lg fa-linkedin-in"></i
+            ></a>
+            <a
+              class="ins-ic mr-3"
+              href="https://www.instagram.com/"
+              role="button"
+              ><i class="fab fa-lg fa-instagram"></i
+            ></a>
+            <a
+              class="so-ic mr-3"
+              href="http://www.stackoverflow.com/"
+              role="button"
+              ><i class="fab fa-lg fa-stack-overflow"></i
+            ></a>
+            <a class="git-ic mr-3" href="https://www.github.com/" role="button"
+              ><i class="fab fa-lg fa-github"></i
+            ></a>
+          </div>
+          <!-- Fim das redes sociais -->
+          <span
+            class="footer-text m-0 container d-flex justify-content-center"
+            id="copyright"
+          >
+            Copyright © 2020 | Todos os direitos reservados a Editora Castor
+            Desenvolvido por Grupo1.</span
+          >
+        </div>
       </div>
       <!-- ./container p-4 border-top -->
     </footer>
-  
+
     <script src="./js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  
-  </html>
+</html>
