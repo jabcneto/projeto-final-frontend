@@ -1,0 +1,44 @@
+/* Inicio WhatsApp  */
+
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 70px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}
+
+/*Fim WhatsApp  */
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-stack-overflow,
+.fa-github {
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 70px;
+  color: rgb(255, 255, 255);
+}
+
+.facebook {
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 70px;
+  color: rgb(255, 255, 255);
+  background-color: #3b5998;
+}
