@@ -1,350 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <!-- Inicico Fivicon -->
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <!-- Fim Fivicon -->
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "579022496342419");
-      fbq("track", "PageView");
-    </script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=579022496342419&ev=PageView
-	&noscript=1"
-      />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
 
-    <!-- Google Tag -->
-    <!-- Global site tag (gtag.js) - Google Ads: 683045661 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-683045661"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-683045661");
-    </script>
-    <!-- End Google Tag -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <!-- Inicico Fivicon -->
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <!-- Fim Fivicon -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "579022496342419");
+    fbq("track", "PageView");
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=579022496342419&ev=PageView
+	&noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <!-- Google Tag -->
+  <!-- Global site tag (gtag.js) - Google Ads: 683045661 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-683045661"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "AW-683045661");
+  </script>
+  <!-- End Google Tag -->
 
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/social.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
-    <title>Editora Castor</title>
-  </head>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/social.css" />
 
-  <body class="bg-light">
-    <header>
-      <h2 id="nomeLogado"></h2>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="border-bottom container">
-          <a href="../index.html" class="navbar-brand">
-            <img src="../img/logo.png" alt="" width="100px" />
-          </a>
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#nav-principal"
-            aria-controls="navbarNav"
-          >
-            <i class="navbar-toggler-icon"></i>
-          </button>
-          <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
-            <ul
-              class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
-            >
-              <li class="nav-item align-self-center">
-                <a href="../index.html" class="nav-link mr-2 text-light"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="./produtos.html" class="nav-link mr-2 text-light"
-                  >Produtos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="./sobre.html" class="nav-link mr-2 text-light"
-                  >Sobre</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="./contato.html" class="nav-link mr-2 text-light"
-                  >Contato</a
-                >
-              </li>
-              <li class="nav-item ml-3">
-                <a href="./login.html" class="btn btn-outline-light">Entrar</a>
-              </li>
-            </ul>
-          </div>
+  <title>Editora Castor</title>
+</head>
+
+<body class="bg-light">
+  <header>
+    <h2 id="nomeLogado"></h2>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="border-bottom container">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../img/logo.png" alt="" width="100px" />
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" aria-controls="navbarNav">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
+          <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
+            <li class="nav-item align-self-center">
+              <a href="../index.html" class="nav-link mr-2 text-light">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./produtos.html" class="nav-link mr-2 text-light">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a href="./sobre.html" class="nav-link mr-2 text-light">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contato.html" class="nav-link mr-2 text-light">Contato</a>
+            </li>
+            <li class="nav-item ml-3">
+              <a href="./login.html" class="btn btn-outline-light">Entrar</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <span id="usuario-logado"></span>
-    </header>
+      </div>
+    </nav>
+    <span id="usuario-logado"></span>
+  </header>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto m-5 py-2">
-          <div class="card card-signin my-5">
-            <div class="card-body">
-              <h5 class="card-title text-center">Login</h5>
-              <form id="form-login" class="form-signin">
-                <div id="email" class="form-label-group">
-                  <input
-                    type="email"
-                    id="inputEmail"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                    autofocus
-                  />
-                </div>
-                <br />
-                <div id="senha" class="form-label-group">
-                  <input
-                    type="password"
-                    id="inputPassword"
-                    class="form-control"
-                    placeholder="Senha"
-                    required
-                  />
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto m-5 py-2">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Login</h5>
+            <form id="form-login" class="form-signin">
+              <div id="email" class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus />
+              </div>
+              <br />
+              <div id="senha" class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required />
+              </div>
 
-                <div class="custom-control custom-checkbox mb-3">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="customCheck1"
-                  />
-                  <label class="custom-control-label" for="customCheck1"
-                    >Lembrar senha</label
-                  >
-                </div>
-                <button
-                  class="btn btn-lg btn-dark btn-block text-uppercase"
-                  onclick="login(e)"
-                >
-                  Entrar
-                </button>
-                <hr class="my-4" />
-                <button
-                  class="btn btn-lg btn-google btn-block text-uppercase"
-                  type="submit"
-                >
-                  <i class="fab fa-google mr-2"></i> Entrar com Google
-                </button>
-                <button
-                  class="btn btn-lg btn-facebook btn-block text-uppercase"
-                  type="submit"
-                >
-                  <i class="fab fa-facebook-f facebook mr-2"></i> Entrar com Facebook
-                </button>
-              </form>
-            </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
+              </div>
+              <button class="btn btn-lg btn-dark btn-block text-uppercase" onclick="login(e)">
+                Entrar
+              </button>
+              <hr class="my-4" />
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit">
+                <i class="fab fa-google mr-2"></i> Entrar com Google
+              </button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit">
+                <i class="fab fa-facebook-f facebook mr-2"></i> Entrar com Facebook
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Inicio Footer -->
-    <!-- Inicio Whatsapp -->
-    <!-- <a href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"></a> -->
-    <!-- Fim WhatsApp -->
-    <footer class="bg-dark text-light">
-      <div class="container p-4 border-top">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              class="mx-auto d-none d-md-block"
-              width="100"
-              src="./img/logo.png"
-              alt="Logo da editora castor"
-            />
-          </div>
-          <div
-            id="sobre-inferior"
-            class="col-md-4 text-center text-light d-none d-md-block"
-          >
-            <h4>Sobre</h4>
-            <p class="text-truncate lead">
-              Somos um grupo de amantes de livros ambiciosos, e decidimos criar
-              uma editora para publicarmos todos os livros que julgamos válidos
-              para outros amantes de livros como nós. Só no primeiros mês da
-              editora, já tinhamos acolhido 3 projetos de livros diferentes para
-              publicação, livros esses que foram um enorme sucesso. Temos
-              prioridade em livros de escritores pequenos e desconhecidos, para
-              darmos a eles a chance de ficarem no holofote que merecem no mundo
-              da literatura.
-            </p>
-            <a href="./pages/sobre.html" destino="#conteudo" class="text-light"
-              >Leia mais</a
-            >
-          </div>
-          <div class="col-12 col-md-4 text-center">
-            <h4 class="h4 text-light">Navegação</h4>
-            <nav
-              class="navbar navbar-dark bg-dark d-flex justify-content-center"
-            >
-              <div id="nav-footer">
-                <ul class="navbar-nav flex-row">
-                  <ul
-                    class="navbar-nav ml-md-auto d-flex justify-content-center flex-row"
-                  >
-                    <li class="nav-item align-self-center">
-                      <a
-                        href="./pages/index.html"
-                        destino="#conteudo"
-                        class="nav-link mr-2 text-light"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="./pages/produtos.html"
-                        destino="#conteudo"
-                        class="nav-link mr-2 text-light"
-                        >Produtos</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="./pages/sobre.html"
-                        destino="#conteudo"
-                        class="nav-link mr-2 text-light"
-                        >Sobre</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="./pages/contato.html"
-                        destino="#conteudo"
-                        class="nav-link mr-2 text-light"
-                        >Contato</a
-                      >
-                    </li>
-                  </ul>
+  </div>
+  <!-- Inicio Footer -->
+  <footer class="bg-dark text-light">
+    <div class="container-fluid p-4 border-top">
+      <div class="row">
+        <div id="sobre-inferior" class="col-md-6 text-center text-light d-none d-md-block">
+          <h4>Sobre</h4>
+          <p class="text-truncate lead">
+            Somos um grupo de amantes de livros
+          </p>
+          <a href='pages/sobre.html' class="nav-link mr-2 text-light">Saiba mais</a>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <h4 class="h4 text-light">Navegação</h4>
+          <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+            <div id="nav-footer">
+              <ul class="navbar-nav flex-row">
+                <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
+                  <li class="nav-item align-self-center">
+                    <a href='../index.html' class="nav-link mr-2 text-light">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href='./produtos.html' class="nav-link mr-2 text-light">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href='./sobre.html' class="nav-link mr-2 text-light">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href='./contato.html' class="nav-link mr-2 text-light">Contato</a>
+                  </li>
                 </ul>
-              </div>
-            </nav>
-          </div>
-          <!-- ./col-12 col-md-4 text-center -->
+              </ul>
+            </div>
+          </nav>
         </div>
-        <!-- ./row -->
-        <div class="row">
-          <!-- Inicio Whatsapp -->
-          <a
-            class="whatsapp-link"
-            href="https://web.whatsapp.com/send?phone=5521988990633"
-            target="_blank"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <!-- Fim WhatsApp -->
-          <!-- redes sociais -->
-          <div class="col-12 container d-flex justify-content-center">
-            <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"
-              ><i class="fab fa-lg fa-facebook-f"></i
-            ></a>
-            <a class="tw-ic mr-3" href="https://www.twitter.com/" role="button"
-              ><i class="fab fa-lg fa-twitter"></i
-            ></a>
-            <a class="li-ic mr-3" href="https://www.linkedin.com/" role="button"
-              ><i class="fab fa-lg fa-linkedin-in"></i
-            ></a>
-            <a
-              class="ins-ic mr-3"
-              href="https://www.instagram.com/"
-              role="button"
-              ><i class="fab fa-lg fa-instagram"></i
-            ></a>
-            <a
-              class="so-ic mr-3"
-              href="http://www.stackoverflow.com/"
-              role="button"
-              ><i class="fab fa-lg fa-stack-overflow"></i
-            ></a>
-            <a class="git-ic mr-3" href="https://www.github.com/" role="button"
-              ><i class="fab fa-lg fa-github"></i
-            ></a>
-          </div>
-          <!-- Fim das redes sociais -->
-          <span
-            class="footer-text m-0 container d-flex justify-content-center"
-            id="copyright"
-          >
-            Copyright © 2020 | Todos os direitos reservados a Editora Castor
-            Desenvolvido por Grupo1.</span
-          >
-        </div>
+        <!-- ./col-12 col-md-4 text-center -->
       </div>
-      <!-- ./container p-4 border-top -->
-    </footer>
+      <!-- ./row -->
+      <div class="row">
+        <!-- Inicio Whatsapp -->
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+        <!-- Fim WhatsApp -->
+        <!-- redes sociais -->
+        <div class="col-12 container d-flex justify-content-center">
+          <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"><i
+              class="fab fa-lg fa-facebook-f"></i></a>
+          <a class="tw-ic mr-3" href="https://www.twitter.com/" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+          <a class="li-ic mr-3" href="https://www.linkedin.com/" role="button"><i
+              class="fab fa-lg fa-linkedin-in"></i></a>
+          <a class="ins-ic mr-3" href="https://www.instagram.com/" role="button"><i
+              class="fab fa-lg fa-instagram"></i></a>
+          <a class="so-ic mr-3" href="http://www.stackoverflow.com/" role="button"><i
+              class="fab fa-lg fa-stack-overflow"></i></a>
+          <a class="git-ic mr-3" href="https://www.github.com/" role="button"><i class="fab fa-lg fa-github"></i></a>
+        </div>
+        <!-- Fim das redes sociais -->
+        <span class="footer-text m-0 container-fluid d-flex justify-content-center" id="copyright"> Copyright © 2020 | Todos
+          os direitos reservados a Editora Castor
+          Desenvolvido por Grupo1.</span>
+      </div>
+    </div>
+    <!-- ./container p-4 border-top -->
+  </footer>
 
-    <script src="./js/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
