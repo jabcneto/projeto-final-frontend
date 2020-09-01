@@ -1,15 +1,7 @@
 document.querySelectorAll(".link-categoria").forEach((link) => {
   link.onclick = (e) => {
     e.preventDefault();
-    if (link.innerText.toLowerCase() === "autoajuda") {
-      filtraCategoria(link.innerText.toLowerCase());
-    }
-    if (link.innerText.toLowerCase() === "romance") {
-      filtraCategoria(link.innerText.toLowerCase());
-    }
-    if (link.innerText.toLowerCase() === "ficção científica") {
-      filtraCategoria(link.innerText.toLowerCase());
-    }
+    filtraCategoria(link.innerText.toLowerCase());
   };
 });
 
