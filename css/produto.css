@@ -11,3 +11,8 @@
   border-bottom: 1px solid #c0c0c0;
   transition: transform 0.4s;
 }
+
+div.card-body {
+  overflow: hidden;
+  height: 200px;
+}
