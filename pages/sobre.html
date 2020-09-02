@@ -86,7 +86,7 @@
     <title>Editora Castor</title>
   </head>
 
-  <body class="bg-light">
+  <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="border-bottom container">
@@ -136,10 +136,19 @@
             </ul>
             <div class="d-flex justify-content-center">
               <span class="btn text-center" id="usuario-logado"></span>
-              <a id="botao-sair" class="btn text-light text-center" onclick="logout()">sair</a>
+              <a
+                id="botao-sair"
+                class="btn text-light text-center"
+                onclick="logout()"
+                >sair</a
+              >
             </div>
           </div>
         </div>
+        <a id="dark-mode-botao" onclick="darkMode()">
+          <i id='dark-on' class="fas fa-toggle-on"></i>
+          <i id='dark-off' class="fas fa-toggle-off"></i>
+        </a>
       </nav>
     </header>
 
@@ -167,7 +176,7 @@
     </section>
     <!-- Fim do Bem vindo -->
     <!-- Inicio da Nossa História -->
-    <section class="text-dark">
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-right">

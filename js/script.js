@@ -46,9 +46,11 @@ const login = () => {
     myStorage.setItem("email", email);
     myStorage.setItem("senha", senha);
     myStorage.setItem("nome", "admin");
-    setTimeout(function () { window.location.href = "../index.html", 2000 });
+    setTimeout(function () {
+      (window.location.href = "../index.html"), 2000;
+    });
   } else {
-    alert('Login ou senha incorretos');
+    alert("Login ou senha incorretos");
   }
 };
 
@@ -62,4 +64,13 @@ const loginSocial = () => {
 const logout = () => {
   myStorage.clear();
   location.reload();
+};
+
+$('#dark-off').hide();
+const darkMode = () => {
+  console.log("clicou para ficar trevoso");
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+  $('#dark-on').toggle();
+  $('#dark-off').toggle();
 };
