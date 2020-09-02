@@ -17,7 +17,6 @@ div.card-body {
   height: 200px;
 }
 
-div.card-body:hover {
+div.card-body:focus {
   height: 100%;
-  transform: translate();
 }
