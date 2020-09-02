@@ -17,6 +17,6 @@ div.card-body {
   height: 200px;
 }
 
-div.card-body:focus {
+div.card-body:hover {
   height: 100%;
 }
