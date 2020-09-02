@@ -46,6 +46,7 @@ const login = () => {
     myStorage.setItem("email", email);
     myStorage.setItem("senha", senha);
     myStorage.setItem("nome", "admin");
+    location.reload();
   }
 };
 
@@ -53,6 +54,7 @@ const loginSocial = () => {
   myStorage.setItem("email", email);
   myStorage.setItem("senha", senha);
   myStorage.setItem("nome", "admin");
+  location.reload();
 };
 
 const logout = () => {
