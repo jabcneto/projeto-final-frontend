@@ -46,7 +46,9 @@ const login = () => {
     myStorage.setItem("email", email);
     myStorage.setItem("senha", senha);
     myStorage.setItem("nome", "admin");
-    location.reload();
+    setTimeout(function () { window.location.href = "../index.html", 2000 });
+  } else {
+    alert('Login ou senha incorretos');
   }
 };
 
