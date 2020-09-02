@@ -70,7 +70,7 @@
   <title>Editora Castor</title>
 </head>
 
-<body class="bg-light">
+<body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="border-bottom container">
@@ -104,6 +104,10 @@
           </div>
         </div>
       </div>
+      <a id="dark-mode-botao" onclick="darkMode()">
+        <i id='dark-on' class="fas fa-toggle-on"></i>
+        <i id='dark-off' class="fas fa-toggle-off"></i>
+      </a>
     </nav>
   </header>
 
@@ -112,7 +116,7 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto m-5 py-2">
         <div class="card card-signin my-5">
           <div class="card-body">
-            <h5 class="card-title text-center">Login</h5>
+            <h5 class="card-title text-dark text-center">Login</h5>
             <form id="form-login" class="form-signin">
               <div id="email" class="form-label-group">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus />
@@ -124,7 +128,7 @@
 
               <div class="custom-control custom-checkbox mb-3">
                 <input type="checkbox" class="custom-control-input" id="customCheck1" />
-                <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
+                <label class="custom-control-label text-dark" for="customCheck1">Lembrar senha</label>
               </div>
               <button class="btn btn-lg btn-dark btn-block text-uppercase" onclick="login()">
                 Entrar
