@@ -13,10 +13,14 @@
 }
 
 div.card-body {
+  max-height: 200px;
   overflow: hidden;
-  height: 200px;
+  transition: max-height 0.9s ease-out;
 }
 
 div.card-body:hover {
-  height: 100%;
+  max-height: 800px;
+  transition: max-height 1.3s ease-in;
+  overflow: show;
+  background: #d5d5d5;
 }
