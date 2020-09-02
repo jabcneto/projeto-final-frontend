@@ -9,6 +9,11 @@ footer {
   font-size: 9pt;
 }
 
+#usuario-logado {
+  color: whitesmoke;
+  cursor: default;
+}
+
 /* Ajustando responsividade */
 
 @media (max-width: 575.98px) {
