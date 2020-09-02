@@ -19,11 +19,11 @@ footer {
 @media (max-width: 575.98px) {
   .lead {
     font-size: 17px;
-    padding: .3rem;
+    padding: 0.3rem;
   }
-  .display-4{
+  .display-4 {
     text-align: center;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
     padding: 1.2rem;
@@ -36,16 +36,16 @@ footer {
   footer {
     border-bottom: 1px solid white;
   }
-  .card-categoria{
-    width: 500px; 
-   }
+  .card-categoria {
+    width: 500px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .lead {
     font-size: 17px;
   }
-  .display-4{
+  .display-4 {
     font-size: 2.4rem;
     font-weight: 300;
     line-height: 1.2;
@@ -57,38 +57,46 @@ footer {
   footer {
     border-bottom: 1px solid white;
   }
-  .card-categoria{
-   width: 500px; 
+  .card-categoria {
+    width: 500px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .card-categoria{
-    width:1000px;
+  .card-categoria {
+    width: 1000px;
     transition: 0.4s;
   }
-  .card-categoria:hover{
+  .card-categoria:hover {
     transform: scale(1.2);
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .card-categoria{
-    width:1000px;
+  .card-categoria {
+    width: 1000px;
     transition: 0.4s;
   }
-  .card-categoria:hover{
+  .card-categoria:hover {
     transform: scale(1.2);
   }
 }
 
 @media (min-width: 1200px) {
-.card-categoria{
-  width:1000px;
-  transition: 0.4s;
-}
-.card-categoria:hover{
-  transform: scale(1.2);
-}
+  .card-categoria {
+    width: 1000px;
+    transition: 0.4s;
+  }
+  .card-categoria:hover {
+    transform: scale(1.2);
+  }
 }
 
+.dark-mode {
+  background-color: #57636e;
+  color: #fefefe !important;
+}
+
+#dark-mode-botao{
+  color: #fefefe;
+}
