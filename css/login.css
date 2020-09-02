@@ -30,9 +30,21 @@
 .btn-google {
   color: white;
   background-color: #ea4335;
+  font-size: 80%;
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
 }
 
 .btn-facebook {
   color: white;
   background-color: #3b5998;
+  font-size: 80%;
+  border-radius: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
 }
