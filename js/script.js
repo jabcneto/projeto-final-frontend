@@ -1,7 +1,7 @@
 document.querySelectorAll(".link-categoria").forEach((link) => {
   link.onclick = (e) => {
     e.preventDefault();
-    filtraCategoria(link.innerText.toLowerCase());
+      filtraCategoria(link.innerText.toLowerCase());
   };
 });
 
