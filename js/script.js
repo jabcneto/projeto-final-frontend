@@ -13,6 +13,12 @@ const filtraCategoria = (categoria) => {
     } else {
       prod.classList.remove("d-none");
     }
+    });
+};
+
+const mostraTodos = () => {
+  document.querySelectorAll(".produto").forEach((prod) => {
+    prod.classList.remove("d-none");
   });
 };
 
