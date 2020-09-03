@@ -1,6 +1,4 @@
 # projeto-final-frontend
-##Alunos:
-# projeto-final-java2
 ## Grupo 01
 ## Alunos:
 ### Arthur José Vinagre,
