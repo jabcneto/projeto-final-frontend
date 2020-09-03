@@ -1,3 +1,5 @@
+
+//filtro categoria
 document.querySelectorAll(".link-categoria").forEach((link) => {
   link.onclick = (e) => {
     e.preventDefault();
@@ -21,7 +23,7 @@ const mostraTodos = () => {
     prod.classList.remove("d-none");
   });
 };
-
+//fim filtro
 // LOGIN / AUTENTICACAO / LOGOUT
 myStorage = window.sessionStorage;
 
@@ -72,6 +74,8 @@ const logout = () => {
   location.reload();
 };
 
+//fim login
+//dark mode
 $('#dark-off').hide();
 const darkMode = () => {
   console.log("clicou para ficar trevoso");
@@ -80,3 +84,5 @@ const darkMode = () => {
   $('#dark-on').toggle();
   $('#dark-off').toggle();
 };
+//fim darkmode
+
