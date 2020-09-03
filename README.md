@@ -8,4 +8,4 @@
 ### Luis Filippe Ullmann,
 ### João Antonio Barcelos Coutinho Neto.
 
-### <a id="heroku">https://editora-castor.herokuapp.com/</a>
+### <a id="heroku" target='_blank'>https://editora-castor.herokuapp.com/</a>
