@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Inicico Fivicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <!-- Fim Fivicon -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = "2.0";
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(
+            window,
+            document,
+            "script",
+            "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "579022496342419");
+        fbq("track", "PageView");
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=579022496342419&ev=PageView
+        &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag -->
+    <!-- Global site tag (gtag.js) - Google Ads: 683045661 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-683045661"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "AW-683045661");
+    </script>
+    <!-- End Google Tag -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/produto.css" />
+    <link rel="stylesheet" href="../css/social.css" />
+    <link rel="stylesheet" href="../css/comprar.css" />
+    <title>Editora Castor</title>
+</head>
+
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="border-bottom container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../img/logo.png" alt="" width="100px" />
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal"
+                    aria-controls="navbarNav">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+                <div id="nav-principal" class="collapse navbar-collapse mt-3 mb-3">
+                    <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
+                        <li class="nav-item align-self-center">
+                            <a href="../index.html" class="nav-link mr-2 text-light">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produtos.html" class="nav-link mr-2 text-light">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre.html" class="nav-link mr-2 text-light">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link mr-2 text-light">Contato</a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a id="botao-entrar" href="login.html" class="btn btn-outline-light">Entrar</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <span class="btn text-center" id="usuario-logado"></span>
+                        <a id="botao-sair" class="btn text-light text-center" onclick="logout()">sair</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 my-5">
+                    <img class="card-img-top produto-comprar" src="https://images-na.ssl-images-amazon.com/images/I/41HsIZhn+UL._SX331_BO1,204,203,200_.jpg"
+                        alt="21 lições para o século 21" />
+                </div>
+                <div class=" col-md-7 my-5 ">
+                    <h3>21 lições para o século 21</h3>
+                    <h6>Autor: Yuval Noah Harari &nbsp; Categoria: Política</h6>
+                    <div class="col-md-12 jumbotron compra">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Vendido e entregue por: Editora Castor</h6>
+                                <h3>R$ 44.90</h3>
+                                <div class="col-md-6 botoes my-5 flex-row ">
+                                    <button class="d-block btn btn-dark"> Comprar</button><br>
+                                    <input type="number" name="cep" id="">
+                                    <button class="d-block btn btn-dark"> Calcular Frete</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="pagamento my-5">
+                                <h6>Formas de Pagamento</h6>
+                                <h6>Boleto bancário:R$44.90</h6>
+                                <h6>Cartão de crédito: R$44.90</h6>
+                                <!-- Inicio Parcelas -->
+                                <form>
+                                    <select name="parcelas" class="custom-select-sm">
+                                        <option selected>Escolha o parcelamento</option>
+                                        <option value="1x">R$44,90</option>
+                                        <option value="2x">R$22,45</option>
+                                        <option value="3x">R$14,97</option>
+                                    </select>
+                                </form>
+                                <!-- Fim Parcelas -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <h4>Descrição</h4>
+                    <h6 class="card-text descricao-produto text-justify">
+                        21 lições para o século 21 explora o presente e nos conduz
+                    por uma fascinante jornada pelos assuntos prementes da
+                    atualidade.O livro trata sobre o desafio de manter o foco
+                    coletivo e individual em face a mudanças frequentes e
+                    desconcertantes. Seríamos ainda capazes de entender o
+                    mundo que criamos?
+                    </h6>
+                </div>
+                <div class="col-md-12 mx-auto mt-3">
+                    <h4>Características</h4>
+                </div>
+                <div class="col-md-12 mx-auto">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>Autor</td>
+                                <td>Yuval Noah Harari</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ano de Edição</td>
+                                <td>2018</td>
+                            </tr>
+                            <tr>
+                                <td>Editora</td>
+                                <td>Companhia das letras</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>8535930914</td>
+                            </tr>
+                            <tr>
+                                <td>Edição</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Idioma</td>
+                                <td>Português</td>
+                            </tr>
+                            <tr>
+                                <td>País</td>
+                                <td>Brasil</td>
+                            </tr>
+                            <tr>
+                                <td>Acabamento</td>
+                                <td>Brochura</td>
+                            </tr>
+                            <tr>
+                                <td>Páginas</td>
+                                <td>432</td>
+                            </tr>
+                            <tr>
+                                <td>Dimensões</td>
+                                <td>20.6 x 14 x 2.2 cm</td>
+                            </tr>
+                            <tr>
+                                <td>Peso</td>
+                                <td>0.38 kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Inicio Footer -->
+    <footer class="bg-dark text-light">
+        <div class="container-fluid p-4 border-top">
+            <div class="row">
+                <div id="sobre-inferior" class="col-md-6 text-center text-light d-none d-md-block">
+                    <h4>Sobre</h4>
+                    <p class="text-truncate lead">
+                        Somos um grupo de amantes de livros
+                    </p>
+                    <a href="pages/sobre.html" class="nav-link mr-2 text-light">Saiba mais</a>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <h4 class="h4 text-light">Navegação</h4>
+                    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+                        <div id="nav-footer">
+                            <ul class="navbar-nav flex-row">
+                                <ul class="navbar-nav ml-md-auto d-flex justify-content-center flex-row">
+                                    <li class="nav-item align-self-center">
+                                        <a href="../index.html" class="nav-link mr-2 text-light">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./produtos.html" class="nav-link mr-2 text-light">Produtos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./sobre.html" class="nav-link mr-2 text-light">Sobre</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./contato.html" class="nav-link mr-2 text-light">Contato</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- ./col-12 col-md-4 text-center -->
+            </div>
+            <!-- ./row -->
+            <div class="row">
+                <!-- Inicio Whatsapp -->
+                <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5521988990633" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
+                <!-- Fim WhatsApp -->
+                <!-- redes sociais -->
+                <div class="col-12 container d-flex justify-content-center">
+                    <a class="fb-ic mr-3" href="https://www.facebook.com/" role="button"><i
+                            class="fab fa-lg fa-facebook-f"></i></a>
+                    <a class="tw-ic mr-3" href="https://www.twitter.com/" role="button"><i
+                            class="fab fa-lg fa-twitter"></i></a>
+                    <a class="li-ic mr-3" href="https://www.linkedin.com/" role="button"><i
+                            class="fab fa-lg fa-linkedin-in"></i></a>
+                    <a class="ins-ic mr-3" href="https://www.instagram.com/" role="button"><i
+                            class="fab fa-lg fa-instagram"></i></a>
+                    <a class="so-ic mr-3" href="http://www.stackoverflow.com/" role="button"><i
+                            class="fab fa-lg fa-stack-overflow"></i></a>
+                    <a class="git-ic mr-3" href="https://www.github.com/" role="button"><i
+                            class="fab fa-lg fa-github"></i></a>
+                </div>
+                <!-- Fim das redes sociais -->
+                <span class="footer-text m-0 container-fluid d-flex justify-content-center" id="copyright">
+                    Copyright © 2020 | Todos os direitos reservados a Editora Castor
+                    Desenvolvido por Grupo1.</span>
+            </div>
+        </div>
+        <!-- ./container p-4 border-top -->
+    </footer>
+    </script>
+    <script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
