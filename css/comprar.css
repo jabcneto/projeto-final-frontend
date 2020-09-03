@@ -8,3 +8,9 @@
     padding: 10px;
 
 }
+
+@media (max-width: 900.98px) {
+    .pagamento{
+        width: 100px;
+        padding: 5px;
+    }

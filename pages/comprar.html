@@ -124,24 +124,25 @@
                             <div class="col-md-6">
                                 <h6>Vendido e entregue por: Editora Castor</h6>
                                 <div class="col-md-6 botoes my-5 flex-row ">
-                                    <h3>R$ 26.90</h3>
+                                <h3>R$ 26.90</h3>
                                     <button class="d-block btn btn-dark"> Comprar</button><br>
-                                    <input type="number" name="cep" id="">
+                                    <input type="number" name="cep" placeholder="000000-000">
                                     <button class="btn btn-primary btn-sm btn-dark my-1"> Calcular Frete</button>
                                     
                                 </div>
                             </div>
-                            <div class="pagamento my-5">
-                                <h6>Formas de Pagamento</h6>
+                            <!-- Inicio formas de pagamento -->
+                            <div id="pagamento" class="pagamento my-5">
+                                <h5><strong>Formas de Pagamento</strong></h5>
                                 <h6>Boleto bancário:R$24.99</h6>
                                 <h6>Cartão de crédito: R$24.99</h6>
                                 <!-- Inicio Parcelas -->
                                 <form>
                                     <select name="parcelas" class="custom-select-sm">
                                         <option selected>Escolha o parcelamento</option>
-                                        <option value="1x">R$24,99</option>
-                                        <option value="2x">R$12,50</option>
-                                        <option value="3x">R$8,33</option>
+                                        <option value="1x">1x R$24,99</option>
+                                        <option value="2x">2x R$12,50</option>
+                                        <option value="3x">3x R$8,33</option>
                                     </select>
                                 </form>
                                 <!-- Fim Parcelas -->
