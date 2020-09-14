@@ -1,4 +1,4 @@
-# projeto-final-frontend
+# SerraTec | FrontEnd | Website developed as a final test for the frontend class.
 ## Grupo 01
 ## Alunos:
 ### Arthur José Vinagre,
